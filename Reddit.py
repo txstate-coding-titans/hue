@@ -1,4 +1,7 @@
 import praw
+import pandas as pd
+import datetime as dt
+
 
 reddit = praw.Reddit(client_id= 'FiYE4ww3cnEQDQ' ,
 	client_secret = 'Vk7Fwl9DJTHX7dCqsJpviK82H8E',
@@ -9,7 +12,10 @@ reddit = praw.Reddit(client_id= 'FiYE4ww3cnEQDQ' ,
 subreddit = reddit.subreddit('SuicideWatch')
 
 
-hot_python = subreddit.hot(limit = 5)
+hot_python = subreddit.hot(limit = 10)
 
 for submission in hot_python:
 	print(submission.selftext)
+		
+
+		#thewriter.writerow((submission.selftext.encode('utf-8')))
