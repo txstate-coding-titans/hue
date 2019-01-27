@@ -70,3 +70,6 @@ cloud-bigtable-client/
 googleapis-pb/
 grpc_python_venv/
 pytype_output/
+
+#custom data dump
+data.json

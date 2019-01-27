@@ -1,4 +1,4 @@
-# Usage: tone.py [API key]
+# Usage: tone_azure.py [API key]
 #demonstrates Microsoft Cognitive API calls
 import sys
 
@@ -19,7 +19,7 @@ documents = {'documents' : [
   {'id': '5', 'language': 'en', 'text': 'In highschool? Where I was not the best of friends? That was nine years ago now. We had not seen each other since we graduated, and started hanging out again 30 months ago or so.'},
   {'id': '6', 'language': 'en', 'text': 'Where I was not the best of friends?'},
   {'id': '7', 'language': 'en', 'text': 'TELL ME YOU DON\'T LIKE ME I KNOW YOU ARE BETTER THEN ME!'},
-  {'id': '8', 'language': 'en', 'text': 'Also, I didn\'t get it, because he was a petulant, vindictive, angry person who had told us multiple times that he liked to hurt people when he felt slighted or jealous''}
+  {'id': '8', 'language': 'en', 'text': 'Give up! Because there will come a day — trust me on this, there will come many days where I did kill myself.'}
 ]}
 
 import requests
@@ -56,3 +56,4 @@ pprint(key_phrases)
 #                {'id': '6', 'keyPhrases': ['best of friends']},
 #                {'id': '7', 'keyPhrases': []}],
 #  'errors': []}
+
